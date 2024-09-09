@@ -42,4 +42,8 @@ public class UserService {
         }
         return null;
     }
+
+    public User getUserByUserName(String username) {
+        return this.userRepository.findByEmail(username);
+    }
 }
